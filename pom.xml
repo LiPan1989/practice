@@ -6,5 +6,10 @@
   <packaging>pom</packaging>
   <modules>
   	<module>test.netty</module>
+  	<module>test.concurrent</module>
+  	<module>test.spring</module>
+  	<module>test.springboot</module>
+  	<module>test.jdk8</module>
+  	<module>test.pattern</module>
   </modules>
 </project>
