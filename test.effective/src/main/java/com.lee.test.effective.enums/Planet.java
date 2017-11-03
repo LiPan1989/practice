@@ -28,6 +28,10 @@ public enum Planet {
     }
 
     public double surfaceGravity(){
+        return surfaceGravity;
+    }
+
+    public double surfaceWeight(double mass) {
         return mass * surfaceGravity;
     }
 

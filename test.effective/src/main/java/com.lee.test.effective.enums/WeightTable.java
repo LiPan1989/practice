@@ -8,7 +8,7 @@ public class WeightTable {
         double earthWeight = Double.parseDouble(args[0]);
         double mass = earthWeight / Planet.EARTH.surfaceGravity();
         for(Planet p : Planet.values()) {
-            System.out.printf("Weigth on %s is %f%n", p, p.surfaceGravity());
+            System.out.printf("Weigth on %s is %f%n", p, p.surfaceWeight(mass));
         }
     }
 }
