@@ -13,5 +13,6 @@
         <module>test.jdk8</module>
         <module>test.pattern</module>
         <module>test.utils</module>
+        <module>test.effective</module>
     </modules>
 </project>
