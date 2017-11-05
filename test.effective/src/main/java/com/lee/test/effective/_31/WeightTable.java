@@ -1,4 +1,4 @@
-package com.lee.test.effective.enums;
+package com.lee.test.effective._31;
 
 /**
  * Created by LIPAN on 2017/11/3.
