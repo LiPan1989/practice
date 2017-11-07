@@ -19,6 +19,16 @@ public class Bigram {
         return bigram.first == first && bigram.second == second;
     }
 
+    @Override
+    public boolean equals(Object object) {
+        if (!(object instanceof Bigram)) {
+            return false;
+        }
+        Bigram bigram = (Bigram) object;
+        return bigram.first == first && bigram.second == second;
+    }
+
+    @Override
     public int hashCode() {
         return 31 * first + second;
     }
