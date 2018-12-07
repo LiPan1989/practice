@@ -1,6 +1,6 @@
 package com.lee.test.jdk8.lambda;
 
-import java.util.concurrent.TimeUnit;
+		import java.util.concurrent.TimeUnit;
 
 public class LambdaThread {
 	public static void main(String[] args) throws InterruptedException {
