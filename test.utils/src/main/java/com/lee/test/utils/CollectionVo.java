@@ -9,25 +9,23 @@ import java.util.Set;
  */
 public class CollectionVo {
 	
-	private List<?> list;
+	private List<String> list;
 	
-	private Set<?> set;
+	private Set<String> set;
 
-	public List<?> getList() {
+	public List<String> getList() {
 		return list;
 	}
 
-	public void setList(List<?> list) {
+	public void setList(List<String> list) {
 		this.list = list;
 	}
 
-	public Set<?> getSet() {
+	public Set<String> getSet() {
 		return set;
 	}
 
-	public void setSet(Set<?> set) {
+	public void setSet(Set<String> set) {
 		this.set = set;
 	}
-
-
 }
