@@ -18,8 +18,8 @@ public class TransmittableThreadLocalDemo {
     private static ExecutorService executorService = TtlExecutors.getTtlExecutorService(Executors.newFixedThreadPool(5));
 
     public static void main(String[] args) {
-        simpleThread();
-//        poolThread();
+//        simpleThread();
+        poolThread();
     }
 
     private static void simpleThread() {
