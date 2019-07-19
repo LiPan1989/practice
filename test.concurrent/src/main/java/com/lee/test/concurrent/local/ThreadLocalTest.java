@@ -1,8 +1,5 @@
 package com.lee.test.concurrent.local;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class ThreadLocalTest {
     private static ThreadLocal<String> stringItl1 = new InheritableThreadLocal<String>(){
         @Override
