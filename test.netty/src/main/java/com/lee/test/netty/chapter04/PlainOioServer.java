@@ -26,7 +26,7 @@ public class PlainOioServer {
 						} catch (Exception e) {
 							e.printStackTrace();
 						} finally {
-							
+
 							try {
 								clientSocket.close();
 							} catch (Exception e2) {
@@ -34,7 +34,7 @@ public class PlainOioServer {
 							}
 						}
 					}
-					
+
 				}).start();
 			}
 		} catch (Exception e) {

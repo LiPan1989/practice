@@ -1,7 +1,13 @@
 package com.lee.test.jdk8.lambda;
 
+import com.google.common.collect.Lists;
+import org.junit.jupiter.api.Test;
+
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
+
+import static java.util.stream.Collectors.toMap;
 
 /**
  * Created by LIPAN on 2017/9/23.
@@ -29,5 +35,12 @@ public class LambdaTest1 {
 
         //在java8中使用双冒号操作符(double colon operater)
         players.forEach(System.out :: println);
+    }
+
+    @Test
+    public void test1() {
+        List<Integer> list = Lists.newArrayList(1, 2, 3, 4, 5, 6, 7, 8, 8, 9);
+        Map<Integer, Object> collect = list.parallelStream().collect(toMap(integer -> integer, integer -> null));
+        System.out.println(collect);
     }
 }
