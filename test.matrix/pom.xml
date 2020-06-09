@@ -10,28 +10,22 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.lee</groupId>
-    <artifactId>test.normal</artifactId>
+    <artifactId>test.matrix</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+
     <dependencies>
+        <!-- 核心工程依赖 -->
         <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <version>RELEASE</version>
-            <scope>compile</scope>
+            <groupId>com.jd</groupId>
+            <artifactId>matrix-core</artifactId>
+            <version>0.1</version>
         </dependency>
-
+        <!-- sdk&业务包工程依赖 -->
         <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>19.0</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.16.10</version>
+            <groupId>com.jd</groupId>
+            <artifactId>matrix-sdk</artifactId>
+            <version>0.1</version>
         </dependency>
     </dependencies>
-
 
 </project>

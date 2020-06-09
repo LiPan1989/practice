@@ -17,6 +17,8 @@
         <module>test.hystrix</module>
         <module>test.agent</module>
         <module>test.normal</module>
+        <module>test.matrix</module>
+        <module>test.collections</module>
         <module>test.zk</module>
     </modules>
 
