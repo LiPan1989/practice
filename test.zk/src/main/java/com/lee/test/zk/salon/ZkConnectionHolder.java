@@ -16,7 +16,7 @@ public abstract class ZkConnectionHolder {
 
     static {
         client = CuratorFrameworkFactory.builder()
-                .connectString("192.168.147.32:2181,192.168.147.33:2181,192.168.147.34:2181")
+                .connectString("")
                 .sessionTimeoutMs(3000)
                 .connectionTimeoutMs(5000)
                 .retryPolicy(new ExponentialBackoffRetry(1000,3))
