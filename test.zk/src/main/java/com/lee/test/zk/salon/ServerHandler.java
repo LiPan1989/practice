@@ -11,9 +11,9 @@ import java.net.Socket;
  * @description
  * @date 2020/6/1 23:38
  */
-public class MyServerHandler implements Runnable {
+public class ServerHandler implements Runnable {
     private Socket socket;
-    public MyServerHandler(Socket socket) {
+    public ServerHandler(Socket socket) {
         this.socket = socket;
     }
     @Override
