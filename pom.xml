@@ -20,6 +20,7 @@
         <module>test.matrix</module>
         <module>test.collections</module>
         <module>test.zk</module>
+        <module>test.algorithm</module>
         <module>test.spi</module>
     </modules>
 
