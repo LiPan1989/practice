@@ -8,9 +8,7 @@ import java.net.URL;
  **/
 public class BootStrapTest {
     public static void main(String[] args) {
-
-
-        int i = ".aaaa...".lastIndexOf(46);
-        System.out.println(i);
+        ClassLoader classLoader = BootStrapTest.class.getClassLoader();
+        System.out.println(classLoader);
     }
 }
