@@ -1,5 +1,7 @@
 package com.lee.test.agent.case2;
 
+import com.lee.test.agent.case1.HelloSample;
+
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -7,15 +9,11 @@ import java.util.concurrent.TimeUnit;
  * @create 2020-12-11 下午1:59
  **/
 public class AgentTargetSample {
-    public void sayHello(String name) {
-        System.out.printf("%s say hello!%n", name);
-    }
-
     public static void main(String[] args) throws Exception {
-        AgentTargetSample sample = new AgentTargetSample();
+        HelloSample sample = new HelloSample();
         while (true) {
             TimeUnit.SECONDS.sleep(1);
-            sample.sayHello(Thread.currentThread().getName());
+            sample.sayHello();
         }
     }
 }

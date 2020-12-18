@@ -1,5 +1,7 @@
 package com.lee.test.agent.case2;
 
+import com.lee.test.agent.case1.TestTransformer;
+
 import java.lang.instrument.Instrumentation;
 
 /**
@@ -15,10 +17,7 @@ public class AgentmainAgent {
     }
 
     private static void process() {
-        INST.addTransformer((loader, className, clazz, protectionDomain, byteCode) -> {
-            System.out.printf("Agentmain process by ClassFileTransformer,target class = %s%n", className);
-            return byteCode;
-        }, true);
+        INST.addTransformer(new TestTransformer(), true);
         try {
             INST.retransformClasses(Class.forName("com.lee.test.agent.case2.AgentTargetSample"));
         } catch (Exception e) {

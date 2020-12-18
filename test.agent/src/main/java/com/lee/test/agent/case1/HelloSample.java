@@ -9,6 +9,6 @@ public class HelloSample {
     private static final  String words = "Hello World";
 
     public void sayHello() {
-        System.out.println("say hello:%s " + words);
+        System.out.println("say hello: " + words);
     }
 }
