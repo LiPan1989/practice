@@ -6,6 +6,8 @@ package com.lee.test.agent.case1;
  **/
 public class PermainMain {
     public static void main(String[] args) {
-
+        System.out.println("================Main Invoke================");
+        HelloSample helloSample = new HelloSample();
+        helloSample.sayHello();
     }
 }

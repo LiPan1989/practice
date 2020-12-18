@@ -15,9 +15,10 @@ public class PermainAgent {
     }
 
     private static void process() {
-        INST.addTransformer((loader, className, clazz, protectionDomain, byteCode) -> {
-            System.out.printf("Process by ClassFileTransformer,target class = %s%n", className);
-            return byteCode;
-        });
+//        INST.addTransformer((loader, className, clazz, protectionDomain, byteCode) -> {
+//            System.out.printf("Process by ClassFileTransformer,target class = %s%n", className);
+//            return byteCode;
+//        });
+        INST.addTransformer(new TestTransformer());
     }
 }

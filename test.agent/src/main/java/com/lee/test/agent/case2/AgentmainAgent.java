@@ -1,9 +1,6 @@
 package com.lee.test.agent.case2;
 
-import java.lang.instrument.ClassFileTransformer;
-import java.lang.instrument.IllegalClassFormatException;
 import java.lang.instrument.Instrumentation;
-import java.security.ProtectionDomain;
 
 /**
  * @author cdlipan5
