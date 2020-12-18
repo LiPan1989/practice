@@ -17,6 +17,13 @@
             <artifactId>javassist</artifactId>
             <version>3.12.1.GA</version>
         </dependency>
+        <dependency>
+            <groupId>com.sun</groupId>
+            <artifactId>tools</artifactId>
+            <version>1.8.0</version>
+            <scope>system</scope>
+            <systemPath>/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/lib/tools.jar</systemPath>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
@@ -30,15 +37,11 @@
                             <addClasspath>true</addClasspath>
                         </manifest>
                         <manifestEntries>
-                            <Can-Retransform-Classes>
-                                true
-                            </Can-Retransform-Classes>
-                            <Can-Redefine-Classes>
-                                true
-                            </Can-Redefine-Classes>
-                            <Premain-Class>
-                                com.lee.test.agent.FirstAgent
-                            </Premain-Class>
+                            <Can-Retransform-Classes>true</Can-Retransform-Classes>
+                            <Can-Redefine-Classes>true</Can-Redefine-Classes>
+<!--                            <Premain-Class>com.lee.test.agent.FirstAgent</Premain-Class>-->
+                            <Premain-Class>com.lee.test.agent.case1.PermainAgent</Premain-Class>
+                            <Agent-Class>com.lee.test.agent.case2.AgentmainAgent</Agent-Class>>
                         </manifestEntries>
                     </archive>
                 </configuration>
