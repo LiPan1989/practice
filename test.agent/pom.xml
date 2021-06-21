@@ -35,15 +35,11 @@
                             <addClasspath>true</addClasspath>
                         </manifest>
                         <manifestEntries>
-                            <Can-Retransform-Classes>
-                                true
-                            </Can-Retransform-Classes>
-                            <Can-Redefine-Classes>
-                                true
-                            </Can-Redefine-Classes>
-                            <Premain-Class>
-                                com.lee.test.agent.FirstAgent
-                            </Premain-Class>
+                            <Can-Retransform-Classes>true</Can-Retransform-Classes>
+                            <Can-Redefine-Classes>true</Can-Redefine-Classes>
+<!--                            <Premain-Class>com.lee.test.agent.FirstAgent</Premain-Class>-->
+                            <Premain-Class>com.lee.test.agent.case1.PermainAgent</Premain-Class>
+                            <Agent-Class>com.lee.test.agent.case2.AgentmainAgent</Agent-Class>>
                         </manifestEntries>
                     </archive>
                 </configuration>
