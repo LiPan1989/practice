@@ -17,6 +17,11 @@
             <artifactId>javassist</artifactId>
             <version>3.12.1.GA</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.lee</groupId>
+            <artifactId>test.agent</artifactId>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
