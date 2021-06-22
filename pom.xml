@@ -22,6 +22,7 @@
         <module>test.zk</module>
         <module>test.algorithm</module>
         <module>test.spi</module>
+        <module>test.httpclient</module>
     </modules>
 
     <dependencies>
